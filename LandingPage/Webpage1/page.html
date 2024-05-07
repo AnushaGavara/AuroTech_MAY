@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #555;
+            color: #333;
+        }
+
+        header {
+            background-color: #e5bc95;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            background-color: #e5bc95;
+            padding: 10px 0;
+            text-align: center;
+        }
+        
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            color: #555;
+            text-decoration: none;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+            
+        }
+
+        .section {
+            background-color: #fff;
+            padding: 40px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .know-more-btn {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        .know-more-btn:hover {
+            background-color: #555;
+        }
+
+        .image-container {
+            text-align: center;
+            margin-bottom: 20px;
+            
+        }
+        .image-container-footer{
+            text-align: center;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .image-container-footer img{
+            width:50px;
+            height: 50px;
+            border-radius: 20%;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 80px;
+            margin: 2%;
+            background-color: inherit;
+        }
+        .form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .form-input{
+            width: 300px; 
+            margin-right: 10px; 
+            padding: 10px; 
+            border-radius: 5px; 
+            border: 1px solid #ced4da; 
+            font-size: 16px;    
+        }
+        .form-btn{
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            width:120px;
+        }
+        .form-btn:hover{
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><a href="#about" style="color: #333;text-decoration:none">AuroTech</a></h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+            <a href="#team">Team</a>
+            <a href="#support">Support</a>
+        </nav>
+    </header>
+    <div class="container">
+        <section id="about" class="section">
+            <h2>About Us</h2>
+            <p>Welcome to AuroTech! We are a leading technology company dedicated to providing innovative solutions to our clients. With our team of experts, we strive to deliver high-quality services tailored to meet your business needs.</p>
+            <p>Our mission is to empower businesses through technology, driving growth and success in today's digital world.</p>
+            <form class="form">
+                <input class="form-input"type="text" name="" id="" placeholder="Email">
+                <input class="form-btn" value="Subscribe">
+            </form>
+            <a href="#" class="know-more-btn">Know More</a>
+        </section>
+        <section id="services" class="section">
+            <h2>Our Services</h2>
+            <p>At AuroTech, we offer a wide range of services to help businesses thrive in the digital landscape. From web development and mobile app solutions to cloud computing and digital marketing, we have you covered.</p>
+            <div class="image-container">
+                <img src="images/web_dev.png" alt="Services">
+                <img src="images/mobile.png" alt="Services">
+                <img src="images/cloud.png" alt="Services">
+                <img src="images/digital_marketing.png" alt="Services">
+
+            </div>
+            
+        </section>
+        <section id="contact" class="section">
+            <h2>Contact Us</h2>
+            <p>Have a question or inquiry? Fill out the form below and we'll get back to you as soon as possible.</p>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
+                </div>
+                <button type="submit" class="form-btn">Submit</button>
+            </form>
+        </section>
+    </div>
+    <footer>
+        <p style="margin: 0%;padding:5px">Follow Us</p>
+        <div class="image-container-footer">
+            <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png" alt="Services"></a>
+            <a href="https://www.instagram.com"><img src="images/instagram.png" alt="Services"></a>
+            <a href="https://www.youtube.com"><img src="images/youtube.png" alt="Services"></a>
+            <a href="https://www.twitter.com"><img src="images/twitter.png" alt="Services"></a>
+            <a href="https://www.reddit.com"><img src="images/reddit.png" alt="Services"></a>
+
+        </div>
+    </footer>
+    
+</body>
+</html>
